@@ -23,6 +23,19 @@ public class InteractableObject : MonoBehaviour
     [Tooltip("If enabled, the object starts as kinematic and becomes non-kinematic when first manipulated.")]
     public bool startKinematic = false;
 
+    [Header("Audio Settings")]
+    [Tooltip("Sound effect played when this object collides with something")]
+    public AudioClip collisionSFX;
+
+    [Tooltip("Minimum collision velocity to trigger sound (prevents tiny bumps from making noise)")]
+    [Range(0.1f, 5f)]
+    public float minCollisionVelocity = 0.5f;
+
+    [Tooltip("Auto-find AudioSource on this GameObject if not assigned")]
+    public bool autoFindAudioSource = true;
+
+    private AudioSource audioSource;
+
     [Header("Visual Feedback")]
     public Color highlightColor = Color.yellow;
     public Color anchoredColor = Color.blue;
@@ -56,6 +69,16 @@ public class InteractableObject : MonoBehaviour
         if (startKinematic && rb != null)
         {
             rb.isKinematic = true;
+        }
+
+        if (autoFindAudioSource)
+        {
+            audioSource = GetComponent<AudioSource>();
+
+            if (audioSource == null && collisionSFX != null)
+            {
+                Debug.LogWarning($"InteractableObject on {gameObject.name}: CollisionSFX assigned but no AudioSource found!");
+            }
         }
     }
 
@@ -134,6 +157,21 @@ public class InteractableObject : MonoBehaviour
                 return hasAnchor;
             default:
                 return false;
+        }
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collisionSFX == null || audioSource == null) return;
+
+        float impactVelocity = collision.relativeVelocity.magnitude;
+
+        if (impactVelocity >= minCollisionVelocity)
+        {
+            if (!audioSource.isPlaying)
+            {
+                audioSource.PlayOneShot(collisionSFX);
+            }
         }
     }
 

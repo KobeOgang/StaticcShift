@@ -56,6 +56,16 @@ public class PlayerController : MonoBehaviour
     private bool isMovementRestricted = false;
     private float movementMultiplier = 1f;
 
+    [Header("Audio Settings")]
+    public AudioClip walkFootstepSFX;
+    public AudioClip runFootstepSFX;
+    [Range(0f, 1f)]
+    public float footstepVolume = 1f;
+    public bool autoFindAudioSource = true;
+
+    private AudioSource audioSource;
+    private AudioClip currentFootstepClip;
+
     public Transform orientation;
 
     float horizontalInput;
@@ -82,6 +92,16 @@ public class PlayerController : MonoBehaviour
 
         readyToJump = true;
         startYScale = transform.localScale.y;
+
+        if (autoFindAudioSource)
+        {
+            audioSource = GetComponent<AudioSource>();
+
+            if (audioSource == null && (walkFootstepSFX != null || runFootstepSFX != null))
+            {
+                Debug.LogWarning("PlayerController: Footstep SFX assigned but no AudioSource found!");
+            }
+        }
     }
 
     private void Update()
@@ -91,6 +111,7 @@ public class PlayerController : MonoBehaviour
         MyInput();
         SpeedControl();
         StateHandler();
+        HandleFootsteps();
 
         if (grounded)
             rb.drag = groundDrag;
@@ -323,6 +344,58 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    private void HandleFootsteps()
+    {
+        if (!grounded || audioSource == null)
+        {
+            if (audioSource != null && audioSource.isPlaying)
+            {
+                audioSource.Stop();
+                currentFootstepClip = null;
+            }
+            return;
+        }
+
+        bool isMoving = horizontalInput != 0 || verticalInput != 0;
+
+        if (isMoving)
+        {
+            AudioClip targetClip = null;
+
+            if (state == MovementState.sprinting && runFootstepSFX != null)
+            {
+                targetClip = runFootstepSFX;
+            }
+            else if ((state == MovementState.walking || state == MovementState.crouching) && walkFootstepSFX != null)
+            {
+                targetClip = walkFootstepSFX;
+            }
+
+            if (targetClip != null)
+            {
+                if (currentFootstepClip != targetClip)
+                {
+                    audioSource.clip = targetClip;
+                    audioSource.volume = footstepVolume;
+                    audioSource.loop = true;
+                    audioSource.Play();
+                    currentFootstepClip = targetClip;
+                }
+                else if (!audioSource.isPlaying)
+                {
+                    audioSource.Play();
+                }
+            }
+        }
+        else
+        {
+            if (audioSource.isPlaying)
+            {
+                audioSource.Stop();
+                currentFootstepClip = null;
+            }
+        }
+    }
     private void OnDrawGizmosSelected()
     {
         if (!Application.isPlaying || stepRayLower == null || stepRayUpper == null) return;

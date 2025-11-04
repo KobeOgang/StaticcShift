@@ -8,6 +8,13 @@ public class AnchorSystem : MonoBehaviour
     public float maxAnchorDistance = 10f;
     public LayerMask anchorableLayers = -1;
 
+    [Header("Audio Settings")]
+    [Tooltip("Dedicated AudioSource for anchor sounds")]
+    public AudioSource anchorAudioSource;
+    public AudioClip anchorSFX;
+    [Range(0f, 1f)]
+    public float anchorVolume = 1f;
+
     private InteractableObject currentAnchor;
     private Camera playerCamera;
 
@@ -19,6 +26,11 @@ public class AnchorSystem : MonoBehaviour
         playerCamera = Camera.main;
         if (playerCamera == null)
             playerCamera = FindObjectOfType<Camera>();
+
+        if (anchorAudioSource == null && anchorSFX != null)
+        {
+            Debug.LogWarning("AnchorSystem: Anchor SFX assigned but no AudioSource reference set!");
+        }
     }
 
     public bool TryAnchorObject()
@@ -34,6 +46,12 @@ public class AnchorSystem : MonoBehaviour
         if (targetObject != null && targetObject.TryAnchor())
         {
             currentAnchor = targetObject;
+
+            if (anchorAudioSource != null && anchorSFX != null)
+            {
+                anchorAudioSource.PlayOneShot(anchorSFX, anchorVolume);
+            }
+
             Debug.Log($"Anchored: {targetObject.name}");
             return true;
         }
@@ -46,6 +64,12 @@ public class AnchorSystem : MonoBehaviour
         if (currentAnchor != null)
         {
             currentAnchor.ReleaseAnchor();
+
+            if (anchorAudioSource != null && anchorSFX != null)
+            {
+                anchorAudioSource.PlayOneShot(anchorSFX, anchorVolume);
+            }
+
             Debug.Log($"Released anchor: {currentAnchor.name}");
             currentAnchor = null;
         }

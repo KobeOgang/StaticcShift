@@ -16,7 +16,7 @@ public class TelekinesisController : MonoBehaviour
     public LayerMask interactableLayers = -1;
 
     [Header("Rotation Settings")]
-    public float rotationSpeed = 90f; // degrees per second
+    public float rotationSpeed = 90f;
     public KeyCode rotateLeftKey = KeyCode.Q;
     public KeyCode rotateRightKey = KeyCode.E;
 
@@ -27,6 +27,16 @@ public class TelekinesisController : MonoBehaviour
     [Header("Heavy Object Settings")]
     public float heavyObjectForceMultiplier = 1.5f;
     public float movementSlowdown = 0.5f;
+
+    [Header("Audio Settings")]
+    [Tooltip("Dedicated AudioSource for telekinesis sounds")]
+    public AudioSource telekinesisAudioSource;
+    public AudioClip telekinesisSFX;
+    [Range(0f, 1f)]
+    public float telekinesisVolume = 0.5f;
+    public bool loopTelekinesisSound = true;
+
+    private AudioSource audioSource;
 
     private Camera playerCamera;
     private AnchorSystem anchorSystem;
@@ -53,8 +63,12 @@ public class TelekinesisController : MonoBehaviour
 
         playerController = GetComponent<PlayerController>();
 
-        // Initialize hold distance
         currentHoldDistance = holdDistance;
+
+        if (telekinesisAudioSource == null && telekinesisSFX != null)
+        {
+            Debug.LogWarning("TelekinesisController: Telekinesis SFX assigned but no AudioSource reference set!");
+        }
     }
 
     private void Update()
@@ -254,6 +268,21 @@ public class TelekinesisController : MonoBehaviour
                 currentObject.Rigidbody.angularDrag = 2f;
             }
 
+            if (telekinesisAudioSource != null && telekinesisSFX != null)
+            {
+                if (loopTelekinesisSound)
+                {
+                    telekinesisAudioSource.clip = telekinesisSFX;
+                    telekinesisAudioSource.volume = telekinesisVolume;
+                    telekinesisAudioSource.loop = true;
+                    telekinesisAudioSource.Play();
+                }
+                else
+                {
+                    telekinesisAudioSource.PlayOneShot(telekinesisSFX, telekinesisVolume);
+                }
+            }
+
             Debug.Log($"Grabbed: {currentObject.name} at {currentHoldDistance:F1}m (Type: {currentObject.objectType})");
         }
     }
@@ -265,7 +294,6 @@ public class TelekinesisController : MonoBehaviour
             currentObject.SetManipulated(false);
             currentObject.SetHighlight(false);
 
-            // Restore normal physics properties
             if (currentObject.Rigidbody != null)
             {
                 currentObject.Rigidbody.drag = 1f;
@@ -282,6 +310,11 @@ public class TelekinesisController : MonoBehaviour
             playerController.SetMovementRestriction(false, 1f);
         }
         currentRotationInput = Vector3.zero;
+
+        if (telekinesisAudioSource != null && loopTelekinesisSound)
+        {
+            telekinesisAudioSource.Stop();
+        }
     }
 
     private InteractableObject GetInteractableObjectAtCrosshair()
