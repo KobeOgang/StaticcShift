@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a364825bf53926647bc3ea5aa8034538, type: 3}
+  m_Name: PressurePlates
+  m_EditorClassIdentifier: 
+  tutorialTitle: Pressure Plates
+  tutorialDescription: "There are pressure plates scattered throughout the lab. Each
+    one requires a certain amount of weight to activate. You might need to find a
+    heavy object to place on it\u2026 or stack several smaller ones together. Some
+    doors or mechanisms won\u2019t respond until the plate is fully pressed, so experiment
+    and see what works."
+  contentType: 2
+  tutorialImage: {fileID: 0}
+  tutorialVideo: {fileID: 32900000, guid: a58540a40a899d64e9c71cd35ea5648f, type: 3}

@@ -1,0 +1,11 @@
+Model Information:
+* title:	Laboratory Table
+* source:	https://sketchfab.com/3d-models/laboratory-table-d2eb1e1321eb486f8862d52bcacc2b36
+* author:	yuitop (https://sketchfab.com/yuitop)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Laboratory Table" (https://sketchfab.com/3d-models/laboratory-table-d2eb1e1321eb486f8862d52bcacc2b36) by yuitop (https://sketchfab.com/yuitop) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

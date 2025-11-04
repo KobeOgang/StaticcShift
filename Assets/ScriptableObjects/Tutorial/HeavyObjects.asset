@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a364825bf53926647bc3ea5aa8034538, type: 3}
+  m_Name: HeavyObjects
+  m_EditorClassIdentifier: 
+  tutorialTitle: Heavy Objects
+  tutorialDescription: "You might notice that some objects are too heavy for you
+    to lift. Your power has limits.\nBut certain smaller objects react to your energy.
+    It feels like you can draw strength from them. You just have to find them...\n\n-
+    Find an anchorable object. Press (RMB) to anchor and transfer its energy into
+    you, allowing you to carry heavier objects. Press (RMB) again to release the
+    anchor.\n\nWhile anchored, that object becomes immovable, even through normal
+    physics means. This can be to your advantage\u2026 or not."
+  contentType: 2
+  tutorialImage: {fileID: 0}
+  tutorialVideo: {fileID: 32900000, guid: e28882c6a839d604a8d5aa55a8610850, type: 3}

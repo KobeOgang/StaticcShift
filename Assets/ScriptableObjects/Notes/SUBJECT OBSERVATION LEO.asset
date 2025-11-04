@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 557a236d52ffa054d81d481fc6ac05bd, type: 3}
+  m_Name: SUBJECT OBSERVATION LEO
+  m_EditorClassIdentifier: 
+  noteTitle: A clipboard
+  noteContent: 'SUBJECT OBSERVATION: MARKUS (EXPIRED)
+
+
+    Status: Expired (Autopsy
+    Pending)
+
+
+    ID: S-06 [REDACTED]
+
+
+    Condition: Cadaver. Severe calcification
+    and rapid cellular degradation observed.
+
+
+    Last Log: [Date, 4 years, 7 months,
+    21 days ago]
+
+
+    Notes: Subject S-06 suffered catastrophic systemic overload
+    during power amplification trial. Brain activity spiked to unprecedented levels,
+    followed by immediate and total organ failure. Bone density increased by 300%
+    within minutes. The body effectively turned to stone... then crumbled. Containment
+    of residual energy a primary concern. Suggest immediate incineration.
+
+'

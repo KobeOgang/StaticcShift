@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 557a236d52ffa054d81d481fc6ac05bd, type: 3}
+  m_Name: SUBJECT OBSERVATION JANE
+  m_EditorClassIdentifier: 
+  noteTitle: A clipboard
+  noteContent: 'SUBJECT OBSERVATION: JANE (STASIS)
+
+
+    Status: Indefinite Stasis
+    (Manual Override Required)
+
+
+    ID: S-09 [REDACTED]
+
+
+    Condition: Stable.
+    Vitals nominal.
+
+
+    Last Log: [Date, 4 years, 8 months ago]
+
+
+    Notes: Subject
+    S-09 to be kept in cryo-stasis indefinitely following Incident 4A. Potential
+    for uncontrolled energy output remains at 98%. Do not, under any circumstances,
+    initiate manual release without code-level authorization from Dr. Aris.'

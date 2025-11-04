@@ -1,0 +1,8 @@
+Model Information:
+* title:	scissor lift
+* source:	https://sketchfab.com/3d-models/scissor-lift-2438e8f5612e43fca46747b0f50a56f6
+* author:	NoXiou5 (https://sketchfab.com/NoXiou5)
+
+Model License:
+* license type:	SKETCHFAB Standard (https://sketchfab.com/licenses)
+* requirements:	Under basic restrictions, use worldwide, on all types of media, commercially or not, and in all types of derivative works
