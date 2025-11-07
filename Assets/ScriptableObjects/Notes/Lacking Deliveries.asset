@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 557a236d52ffa054d81d481fc6ac05bd, type: 3}
+  m_Name: Lacking Deliveries
+  m_EditorClassIdentifier: 
+  noteTitle: A Concerned Note
+  noteContent: 'Dear Dr. Rascher,
+
+
+    I know we''ve had concerns on quantity in
+    the past, but the end of the month is closing in and we''re still 1.5 tons away
+    from meeting the quota. Frankford labs will go bankrupt at this point we''re
+    going.
+
+
+    Project Sussex is depending on us.
+
+
+    - Dr. Weber
+
+'

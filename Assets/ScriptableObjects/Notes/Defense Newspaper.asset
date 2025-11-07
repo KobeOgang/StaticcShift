@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 557a236d52ffa054d81d481fc6ac05bd, type: 3}
+  m_Name: Defense Newspaper
+  m_EditorClassIdentifier: 
+  noteTitle: Newspaper Headline on Defense
+  noteContent: 'With International Tension looming in the distance, the United States
+    Department of Defense assures people that proper measures are taken to combat
+    any external threats possible. The department assures the citizens, "America
+    is the wealthiest country in the world, and I''ll let you know that the defensive
+    measures reflects this wealth."
+
+
+    He continues, stating several efforts already
+    exist such as   Project Minot, Project Nellis, and Project Sussex. Although the
+    natures of these projects were not explained General Davis.'

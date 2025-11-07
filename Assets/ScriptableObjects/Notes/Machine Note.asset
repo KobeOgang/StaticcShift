@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 557a236d52ffa054d81d481fc6ac05bd, type: 3}
+  m_Name: Machine Note
+  m_EditorClassIdentifier: 
+  noteTitle: A note stuck to the machine
+  noteContent: "Kinetic Condensers were created in 2030, used to condense kinetic
+    material of Lifters to their brain, making them prime for extraction. \n\nSafety
+    Tips:\n1. After kinetic condensation, immediately inject the cryogenic serum.
+    After kinetic condensation, Lifters magnify telekinetic ability and may use various
+    objects in the room to harm the extracter.\n\n2. Make sure to-\n(The rest of
+    the note is faded out)"

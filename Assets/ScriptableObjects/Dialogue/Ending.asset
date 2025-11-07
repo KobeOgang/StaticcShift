@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30b6d21794025dd4ca3d982b535365ce, type: 3}
+  m_Name: Ending
+  m_EditorClassIdentifier: 
+  dialogueLines:
+  - dialogueText: W-Wha-
+    displayDuration: 0.7
+  - dialogueText: ...
+    displayDuration: 0.7
+  - dialogueText: What is this place...
+    displayDuration: 1
+  - dialogueText: What has the world gone to...
+    displayDuration: 1
+  - dialogueText: I-
+    displayDuration: 1
+  - dialogueText: 'Voice on Speaker: Ma''am this is a level 7 Nuclear Radiation Zone.
+      Strictly off limits.'
+    displayDuration: 3
+  - dialogueText: W-Who's-
+    displayDuration: 1
+  - dialogueText: (You notice it's coming from the Helicopter above)
+    displayDuration: 1.5
+  - dialogueText: I was stuck here... I don't know how long it's been... They-
+    displayDuration: 1.5
+  - dialogueText: Injected me with a huge dose of cryogenic serum... I don't remember
+      anything
+    displayDuration: 2
+  - dialogueText: (Murmurs can be heard coming from the aircraft)
+    displayDuration: 2
+  - dialogueText: 'Voice: Cryogenic serum... there''s a low survival rate. But you
+      won''t be the first. '
+    displayDuration: 3
+  - dialogueText: 'Voice: We''ll take you to safety. Come with us, Ma''am. '
+    displayDuration: 3
+  - dialogueText: B-before that... W-What year is it?
+    displayDuration: 1.5
+  - dialogueText: 'Voice: It''s 2057... About 20 years since the first bombing here.'
+    displayDuration: 1.5
+  - dialogueText: 20 years...
+    displayDuration: 1.5
+  - dialogueText: 'Voice: I''m with the United Nations Peace Crops... There''s only
+      a few places in the world that''s safe.'
+    displayDuration: 3
+  - dialogueText: 'Voice: Come with us, we''ll take you there.'
+    displayDuration: 3
+  canSkip: 1
+  playOnce: 0

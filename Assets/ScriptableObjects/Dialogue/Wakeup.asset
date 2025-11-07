@@ -13,15 +13,17 @@ MonoBehaviour:
   m_Name: Wakeup
   m_EditorClassIdentifier: 
   dialogueLines:
-  - dialogueText: Wha... what?
+  - dialogueText: W- What?!
+    displayDuration: 1
+  - dialogueText: Where... am I?
+    displayDuration: 1
+  - dialogueText: I don't remember anything...
     displayDuration: 2
-  - dialogueText: What... is this?
-    displayDuration: 2
-  - dialogueText: ...Where am I?
-    displayDuration: 2
-  - dialogueText: I don't... I don't remember anything.
-    displayDuration: 3
-  - dialogueText: I don't even remember who I am...
-    displayDuration: 2
+  - dialogueText: 'Was I... kidnapped? '
+    displayDuration: 1
+  - dialogueText: But I'm unbound... I-
+    displayDuration: 1
+  - dialogueText: I need to look around...
+    displayDuration: 1.5
   canSkip: 1
   playOnce: 1

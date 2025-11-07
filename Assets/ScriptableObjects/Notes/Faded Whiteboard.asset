@@ -13,20 +13,23 @@ MonoBehaviour:
   m_Name: Faded Whiteboard
   m_EditorClassIdentifier: 
   noteTitle: A faded whiteboard
-  noteContent: 'Leo - (Expired)
+  noteContent: 'Project Sussex
+
+    Frankford Laboratory Section E1 extraction status
 
 
-    Markus - (Unstable)
+    Leo
+    - (Collected)
 
 
-    Martha - (Expired)
+    Markus - (Collected)
 
 
-    Angel
-    - (Expired)
+    Heather - (To be extracted)
 
 
-    Denzel - (Unstable)
+    Job
+    - (Collected)
 
 
     Jane - (In Stasis)'

@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 557a236d52ffa054d81d481fc6ac05bd, type: 3}
+  m_Name: Kidnappings
+  m_EditorClassIdentifier: 
+  noteTitle: Headline on Kidnappings
+  noteContent: 'October 11, 2030: Random Dissappearances continue this month, reaching
+    a total of 15 people. Names include Job Hunnington, Heather Miller, and Jane
+    Erins. This is larger than the 9 people reported last month. Similarly, these
+    dissappearances have occured across various states in the country. Dissappearances
+    since June has reached a total of 45 people.
+
+
+    Perpetrators are still unknown;
+    neither are there major leads. There are no recorded commonalities amongst missing
+    individuals. Investigators are now examining medical records and a small trend
+    of checkups after the asteroid crisis has been observed.
+
+
+    (The rest is faded
+    out)'

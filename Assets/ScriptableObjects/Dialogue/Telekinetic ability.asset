@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30b6d21794025dd4ca3d982b535365ce, type: 3}
+  m_Name: Telekinetic ability
+  m_EditorClassIdentifier: 
+  dialogueLines:
+  - dialogueText: Telekinetic... ability...
+    displayDuration: 1.5
+  - dialogueText: Huh...
+    displayDuration: 1
+  canSkip: 1
+  playOnce: 1

@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 557a236d52ffa054d81d481fc6ac05bd, type: 3}
+  m_Name: Hopeful Note
+  m_EditorClassIdentifier: 
+  noteTitle: A Hopeful Note
+  noteContent: 'It looks like America is signing the deal, from how their diplomats
+    are speaking. The opposite is true for China. They mentioned that this treaty
+    is a farce...
+
+
+    That leaves the question of peace up to Russia... I''m hopeful.
+    Russia and the US have been allies.. Surely...'

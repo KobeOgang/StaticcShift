@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 557a236d52ffa054d81d481fc6ac05bd, type: 3}
+  m_Name: Concerned Letter
+  m_EditorClassIdentifier: 
+  noteTitle: A Concerned Letter
+  noteContent: 'Dr. Rascher,
+
+
+    Does it ever weigh on your conscience? That these
+    Lifters - these people - we''re dissecting and extracting don''t deserve their
+    untimely deaths? Just because they got influenced by that asteroid a few years
+    ago, we''re killing them for it...
+
+
+    It is indeed a technical marvel... These
+    biokinetic materials we extracted can break up atoms themselves... But we could
+    have done something good with it...  I know we need them for Project Sussex.
+    For all we know, we might need these deaths to save all Americans.
+
+
+    Still,
+    I think about them from time to time. One of the Lifters we got was 15 years
+    old, and just last week we killed him to extract kinetic essence from his head,
+    all to power a nuclear bomb. Bombs everyone talks like it''ll solve all this
+    lack of food.
+
+
+    I''m tired, Dr. Rascher. I''m considering retiring. I don''t
+    know how long I can endure this.
+
+
+    Yours Truly,
+
+    Dr. Weber'

@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: Statis
   m_EditorClassIdentifier: 
   dialogueLines:
-  - dialogueText: Why am I the only one that was in stasis?
-    displayDuration: 3
+  - dialogueText: I'm the only one.... in stasis...
+    displayDuration: 1
+  - dialogueText: What... What happened to the rest?
+    displayDuration: 2
   canSkip: 0
   playOnce: 1
